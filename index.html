@@ -11,19 +11,31 @@
 </head>
 
 <body>
-  <nav class="lr-content">
+  <nav id="nav" class="lr-content">
     <img src="./images/LOGO.png" alt="logo" />
     <ul class="nav-links--desktop">
       <li><a href="#">UX/UI</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Graphic Design</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Graphic Design</a></li>
       <li><a href="#">Resume</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="hamburger">
       <img src="./images/hambuger-menu.png" alt="Hambuger Menu" />
     </div>
   </nav>
+
+  <div class="hamburger-menu--hidden">
+    <nav id="hamburger-nav">
+      <ul class="nav-links--desktop">
+        <li><a href="#">UX/UI</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Graphic Design</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <div class="hero">
     <h1><img class="emo-hi right-spacing-4" src="./images/Hi.svg" alt="Hi" />Hi I'm <span class="name">Eddy
@@ -33,7 +45,7 @@
     <div class="two-columns">
       <img class="eddy-image" src="./images/Eddy.svg" alt="Eddy's Image" />
       <div>
-        <div class="section-heading">
+        <div id="about" class="section-heading">
           <h2 class="right-spacing-4">About me</h2><img class="emoji" src="./images/emoji.svg" alt="linkedin">
         </div>
         <p class="about-me-content">UX/UI designer with a background in visual design. Enjoys making visual prototypes &
@@ -46,10 +58,11 @@
           interfaces that bring users joy and increase brand loyalty.</p>
       </div>
     </div>
-    <div><img id="arrow" class="arrow-down" src="./images/down-arrow-download-svgrepo-com.svg" alt="arrowdown" /></div>
+    <div class="arrow-container"><img id="arrow" class="arrow-down" src="./images/down-arrow.png" alt="arrowdown" />
+    </div>
   </div>
 
-  <section class="my-skill">
+  <section id="skills" class="my-skill">
     <h1 class="skills">My UX/UI Skills</h1>
     <div class="flex-container">
       <div class="skills1">
@@ -79,7 +92,7 @@
     </div>
   </section>
 
-  <section class="my-work">
+  <section id="work" class="my-work">
     <h1 class="work-heading">My Projects</h1>
     <div class="work-grid">
       <div class="grid-area">
@@ -118,7 +131,7 @@
     </div>
   </section>
 
-  <section class="contact-me">
+  <section id="contact" class="contact-me">
     <div>
       <p class="contact-me-thanks">Thank you for reviewing my portfolio. I am open to any questions regarding of my
         projects or myself</p>
@@ -140,5 +153,7 @@
     </ul>
   </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./js/index.js"></script>
 
 </html>
